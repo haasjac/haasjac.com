@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="mycss.css">
+<title>About</title>
+</head>
+
+<body>
+<form>
+<span style="font-weight:bold; font-size:20px;">League of Legends</span>
+<br />
+<span style="font-weight:bold; font-size:26px;">Spell Efficiency Calculator</span>
+<br /><br />
+</form>
+<div id="mycode">
+<code style="white-space:pre;">"Vi": {
+    "id": 254,
+    "title": "the Piltover Enforcer",
+    "name": "Vi",
+    "spells": 
+        ...
+        "cooldown": [1,1,1,1,1],
+        ...
+        "vars": [
+            {"link": "attackdamage",
+                "coeff": [1.15],
+                "key": "f3"},
+            {"link": "spelldamage",
+                "coeff": [0.7],
+                "key": "a1"},
+            {"link": "@text",
+                "coeff": [14,12.5,11,9.5,8],
+                "key": "f1"}
+        ],
+        "sanitizedDescription": "Vi's next attack blasts through her target, dealing damage to enemies behind it.",
+        ...
+        "name": "Excessive Force",
+        ...
+}
+</code>
+</div>
+
+<br />
+
+<div id="about">
+This is a selection of the information obtained from Riot Games API about a spell. AP is calculated as the given Ability Power multiplied by the coefficient of spelldamage. AD is calculated as the given Attack Damage multiplied by the coefficient of attackdamage. CDR is calculated as 1 minus the given Cooldown Reduction multiplied by the max rank cooldown.
+<br /><br />
+Finally the efficiency of the spell is calcuated by: (AP + AD) / CDR.
+<br /><br />
+<a href="index.php">Back to Calculator</a>
+</div>
+
+<span id="riot">
+This application isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing League of Legends. League of Legends and Riot Games are trademarks or registered trademarks of Riot Games, Inc. League of Legends © Riot Games, Inc.
+</span>
+</body>
+</html>
