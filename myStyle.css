@@ -1,0 +1,136 @@
+@charset "utf-8";
+/* CSS Document */
+<style>
+header, section, footer, aside, nav, main, article, figure {
+    display: block; 
+}
+html {
+	background-color: #FFFFFF;/*#F8F8F8;*/
+	/*background-image: url("blue.png");*/
+}
+body {
+	/*width: 1000px;*/
+	font-size: 16px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	margin-left: auto;
+   	margin-right: auto;
+	padding: 10px 50px 10px 50px;
+	overflow-y:scroll;
+}
+#Canvas {
+	padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;f
+    display: block;
+	width: 1000px;
+	height: 500px;
+	border: 1px solid black;
+}
+nav {
+	/*width: 1000px;*/
+	padding-bottom: 20px;
+	font-size: 24px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	/*font-weight: bold;*/
+}
+.navBar {
+	width: 100%;
+	border-bottom: 3px solid black;
+	padding-bottom: 10px;
+	
+}
+.navBar a {
+	text-decoration:none;
+	color:black;
+}
+.navBar a:visited {
+	color:black;
+}
+.navBar a:hover {
+	color:blue;
+}
+.nav {
+	width: 15%;
+	text-align: right;
+	vertical-align: bottom;
+}
+.icon {
+	width: 40%;
+	text-align: left;
+}
+section {
+	min-height: 500px;
+	width: 1000px;
+	margin: auto;
+}
+.about {
+	text-align:left;
+	margin: auto;
+	width: 1000px;
+	padding: 0px;
+}
+.about td {
+	width: 500px;
+}
+.title{
+	/*text-transform:uppercase;*/
+	/*text-decoration:underline;*/
+	font-size: 18px;
+	font-weight: bold;
+}
+ul {
+	list-style-type:none;
+}
+.thumbnail {
+	width: 200px;
+	height: 200px;
+	vertical-align:text-top;
+	padding-right: 20px;
+	float: right;
+}
+.projects {
+	margin:auto;
+}
+.projects td {
+	vertical-align: top;
+	padding-bottom: 50px;
+}
+.tn {
+	width: 200px;
+}
+.gt {
+	width: 500px;
+	padding-bottom: 50px;
+}
+/* FOOTER */
+footer {
+	padding-top: 5px;
+	margin-top: 40px;
+	font-size:20px;
+	color:#000000;
+	text-align:center;
+	clear:both;
+	border-top-style:solid;
+	border-color:#000000;
+	border-width: 2px;
+}
+footer a {
+	color:#D0904C;
+	text-decoration: none;
+}
+footer a:hover {
+	color:#EEEEEE;
+	text-decoration: none;
+}
+.Creative {
+	font-size: 12px;
+	display:inline;
+}
+.Creative a{
+	color: #000000;
+}
+.Creative a:hover{
+	color: #000000;
+}
+</style>

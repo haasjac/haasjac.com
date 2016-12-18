@@ -1,0 +1,220 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 
+	yellow - D0904C
+	blue - 1F3853
+*/
+
+<style>
+/* PAGE SETUP */
+header, section, footer, nav {
+    display: block; 
+}
+html {
+	background-color: #1F3853;
+	background-image: url("images/background.png");
+}
+/* FONT FACE */
+@font-face {
+    font-family: 'kingsbridgeregular';
+    src: url('fonts/kingsbridge-webfont.eot');
+    src: url('fonts/kingsbridge-webfont.eot?#iefix') format('embedded-opentype'),
+         /*url('fonts/kingsbridge-webfont.woff2') format('woff2'),
+         url('fonts/kingsbridge-webfont.woff') format('woff'),*/
+         url('fonts/kingsbridge-webfont.ttf') format('truetype'),
+         url('fonts/kingsbridge-webfont.svg#kingsbridgeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body {
+	width: 1250px;
+	margin-left: auto;
+    margin-right: auto;
+	font-family: 'kingsbridgeregular';
+	overflow-y:scroll;
+}
+
+
+/* HEADER */
+#headtable {
+	width: 1200px;
+	font-size:32px;
+	color:#D0904C;
+	clear:both;	
+	margin-left: auto;
+    margin-right: auto;
+	margin-bottom: 40px;
+	margin-top: 20px;
+	text-align:left;
+	vertical-align:bottom;
+	border-bottom-style:solid;
+	border-color:#D0904C;
+	border-width: 2px;
+}
+#headtable td {
+	vertical-align: bottom;
+}
+#mydate {
+	display:inline;
+	vertical-align: bottom;
+}
+#login {
+	float: right;
+}
+#login a {
+	color:#D0904C;
+}
+#login a:hover {
+	color:#EEEEEE;
+}
+.Login {
+	color:#D0904C;
+	font-family: 'kingsbridgeregular';
+	font-size:14px;
+	margin:0px;
+}
+.Login button{
+	color:#000000;
+}
+.Login input{
+	color:#000000;
+}
+
+/* MAIN CONTENT TABLE */
+#main {
+	width: 1200px;
+	margin-left: auto;
+    margin-right: auto;
+	background-color: #E8E7E6;
+	box-shadow: 0px 0px 10px 5px rgb(20,45,70);
+	
+}
+#main td {
+	vertical-align: top;
+	border-collapse:collapse;
+}
+#navcell {
+	border-right-style:solid;
+	border-color:#1F3853;
+	border-width: 2px;
+}
+/* NAVIGATION */
+nav {
+	min-height: 400px;
+	width: 250px;
+	text-align:left;
+	font-size:20px;
+	float:left;
+	padding-top:20px;
+	padding-left:10px;
+	padding-right:10px;
+	padding-bottom:20px;
+	
+}
+nav a {
+	color:#555555;
+	text-decoration: none;
+	text-indent: 25px;
+}
+nav a:hover {
+	color:#000000;
+	text-decoration: none;
+	text-indent: 25px;
+}
+[id^=navButton] {
+	background-color: transparent;
+	border: none;
+	outline:none;
+	font-size:20px;
+	text-decoration: underline;
+	font-family: 'kingsbridgeregular';
+}
+[id^=NavCat] {
+	padding-top: 10px;
+}
+
+
+/* LEAGUE INFO SECTION */
+[id^=searchcell] {
+	float: left;
+	width: 420px;
+	font-size:24px;
+	color:#000000;
+	padding: 20px;
+	vertical-align: text-bottom;
+	border-right-style:solid;
+	border-color:#1F3853;
+	border-width: 2px;
+}
+[id^=statuscell] {
+	/*float: left;*/
+	width: 470px;
+	font-size:24px;
+	color:#000000;
+	padding: 20px;
+	vertical-align: text-bottom;
+}
+#searchcell {
+	text-align: center;
+}
+#SummonerIcon {
+	width: 150px;
+	height: 150px;
+	padding-right: 10px;	
+}
+#Incidents {
+	width: 445px;
+	font-size: 20px;
+	/*border-style:solid;
+	border-color:#999999;
+	border-width: 2px;*/
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+#Incidents ul {
+	width: 400px;
+	list-style-type:square;
+	text-transform:capitalize;
+}
+#Incidents ul ol {
+	width: 360px;
+	font-size: 16px;
+	text-transform:none;
+}
+.Search {
+	font-size: 18px;
+	font-family: 'kingsbridgeregular';
+}
+
+/* FOOTER */
+footer {
+	width: 1200px;
+	padding-top: 5px;
+	margin-top: 40px;
+	margin-left: auto;
+    margin-right: auto;
+	font-size:20px;
+	color:#D0904C;
+	text-align:center;
+	clear:both;
+	border-top-style:solid;
+	border-color:#D0904C;
+	border-width: 2px;
+}
+footer a {
+	color:#D0904C;
+	text-decoration: none;
+}
+footer a:hover {
+	color:#EEEEEE;
+	text-decoration: none;
+}
+.Creative {
+	font-size: 12px;
+	color:#D0904C;
+	display:inline;
+}
+
+</style>
