@@ -1,2 +1,0 @@
-# haasjac.com
-# haasjac.com
