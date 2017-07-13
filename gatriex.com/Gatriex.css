@@ -89,7 +89,7 @@ body {
     margin-right: auto;
 	background-color: #E8E7E6;
 	box-shadow: 0px 0px 10px 5px rgb(20,45,70);
-	
+	border-collapse: collapse;
 }
 #main td {
 	vertical-align: top;
