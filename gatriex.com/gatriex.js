@@ -1,7 +1,5 @@
 //global variables
-var version;
-var summonerData;
-var leagueData;
+
 var navButtonArrows = [ "&#9654", "&#9654", "&#9654", "&#9654", "&#9654", "&#9654"];
 var navButtonNames;
 var navigation = {length: {0:0}, Name: {0:""}, linkName: {0:""}};
@@ -14,6 +12,9 @@ $(function () {
 });
 
 function getURL() {	
+	var version;
+	var summonerData;
+	var leagueData;
 	
 	//LEAGUE INFO
 	var urlName = "Gatriex";
