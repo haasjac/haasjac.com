@@ -6,7 +6,7 @@
 <link rel="shortcut icon" href="/images/favicon.ico">
 <link rel="stylesheet" type="text/css" href="/Gatriex.css">
 <!-- SCRIPTS - LOADS IN JAVASCRIPT FILES -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
 </script>
 <script src="/Script.js">
 </script>
