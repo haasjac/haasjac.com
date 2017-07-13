@@ -1,9 +1,10 @@
+//global variables
+var navButtonArrows = [ "&#9654", "&#9654", "&#9654", "&#9654", "&#9654", "&#9654"];
+var navButtonNames;
+var navigation = {length: {0:0}, Name: {0:""}, linkName: {0:""}};
+
 //On load
 $(function () {
-	var navButtonArrows = [ "&#9654", "&#9654", "&#9654", "&#9654", "&#9654", "&#9654"];
-	var navButtonNames;
-	var navigation = {length: {0:0}, Name: {0:""}, linkName: {0:""}};
-	
 	getButtons();
 	myDate();
 });
