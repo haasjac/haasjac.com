@@ -1,5 +1,6 @@
 <?php
-$url = $_REQUEST["url"].'b973c251-a85a-40c6-a3b3-2973b8aad9fa';
+include($_SERVER['DOCUMENT_ROOT'] . '/credentials.php');
+$url = $_REQUEST["url"].$api_token;
 //echo $url;
 $curl = curl_init();
 curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, FALSE);

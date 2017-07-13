@@ -1,8 +1,5 @@
 <?php
-$servername = "localhost";
-$username = "haasjacc_root";
-$password = "trumpet77697";
-$dbname = "haasjacc_gatriex";
+include($_SERVER['DOCUMENT_ROOT'] . '/credentials.php');
 $response = array();
 
 // Create connection
