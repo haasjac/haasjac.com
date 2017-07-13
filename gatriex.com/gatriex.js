@@ -41,7 +41,7 @@ function getURL() {
 	});
 	console.log(summonerData);
 	$.ajax({
-		url: "https://na1.api.riotgames.com/lol/league/v3/positions/by-summoner/" + "29199280" + "?api_key=",
+		url: "Call.php?url=https://na1.api.riotgames.com/lol/league/v3/positions/by-summoner/" + "29199280" + "?api_key=",
 		success: function(data) {
 			leagueData = $.parseJSON(data);
 			console.log(leagueData);
