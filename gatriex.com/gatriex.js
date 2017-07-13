@@ -1,5 +1,7 @@
 //global variables
-
+var version;
+var summonerData;
+var leagueData;
 var navButtonArrows = [ "&#9654", "&#9654", "&#9654", "&#9654", "&#9654", "&#9654"];
 var navButtonNames;
 var navigation = {length: {0:0}, Name: {0:""}, linkName: {0:""}};
@@ -12,9 +14,6 @@ $(function () {
 });
 
 function getURL() {	
-	var version;
-	var summonerData;
-	var leagueData;
 	
 	//LEAGUE INFO
 	var urlName = "Gatriex";
@@ -42,7 +41,7 @@ function getURL() {
 	});
 	console.log(summonerData);
 	$.ajax({
-		url: "https://na1.api.riotgames.com/lol/league/v3/positions/by-summoner/" + summonerData["id"] + "?api_key=",
+		url: "https://na1.api.riotgames.com/lol/league/v3/positions/by-summoner/" + "29199280" + "?api_key=",
 		success: function(data) {
 			leagueData = $.parseJSON(data);
 			console.log(leagueData);
