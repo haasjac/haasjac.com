@@ -16,47 +16,40 @@ $(function () {
 function getURL() {	
 	
 	//LEAGUE INFO
-	var urlName = "Gatriex";//getURLVariable("SummonerName");
-	if (urlName == "") {
-		document.getElementById("League").innerHTML = "<br>Welcome to Gatriex!";
-		document.getElementById("SummonerIcon").setAttribute('src', "/images/Logo.png");
-	} else {
-		value = 'value = "' + urlName + '"'
-		setURL("Version");
+	var urlName = "Gatriex";
 		
-		$.ajax({
-			url: "Call.php?url=https://na1.api.riotgames.com/lol/static-data/v3/versions?api_key=",
-			success: function(data) {
-				version = $.parseJSON(data)[0];
-				console.log(version);
-			},
-			error: function(xhr, status, error) {
-				console.log(error);
-			}
-		});
-		
-		$.ajax({
-			url: "Call.php?url=https://na1.api.riotgames.com/lol/summoner/v3/summoners/by-name/" + userNoSpace + "?api_key=",
-			success: function(data) {
-				summonerData = $.parseJSON(data);
-				console.log(summonerData);
-			},
-			error: function(xhr, status, error) {
-				console.log(error);
-			}
-		});
-		
-		$.ajax({
-			url: "https://na1.api.riotgames.com/lol/league/v3/positions/by-summoner/" + summonerData.id + "?api_key=",
-			success: function(data) {
-				leagueData = $.parseJSON(data);
-				console.log(leagueData);
-			},
-			error: function(xhr, status, error) {
-				console.log(error);
-			}
-		});
-	}
+	$.ajax({
+		url: "Call.php?url=https://na1.api.riotgames.com/lol/static-data/v3/versions?api_key=",
+		success: function(data) {
+			version = $.parseJSON(data)[0];
+			console.log(version);
+		},
+		error: function(xhr, status, error) {
+			console.log(error);
+		}
+	});
+	
+	$.ajax({
+		url: "Call.php?url=https://na1.api.riotgames.com/lol/summoner/v3/summoners/by-name/" + userNoSpace + "?api_key=",
+		success: function(data) {
+			summonerData = $.parseJSON(data);
+			console.log(summonerData);
+		},
+		error: function(xhr, status, error) {
+			console.log(error);
+		}
+	});
+	
+	$.ajax({
+		url: "https://na1.api.riotgames.com/lol/league/v3/positions/by-summoner/" + summonerData.id + "?api_key=",
+		success: function(data) {
+			leagueData = $.parseJSON(data);
+			console.log(leagueData);
+		},
+		error: function(xhr, status, error) {
+			console.log(error);
+		}
+	});
 }
 
 //gets navigation buttons
