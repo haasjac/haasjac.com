@@ -30,7 +30,7 @@ function getURL() {
 	});
 	
 	$.ajax({
-		url: "Call.php?url=https://na1.api.riotgames.com/lol/summoner/v3/summoners/by-name/" + userNoSpace + "?api_key=",
+		url: "Call.php?url=https://na1.api.riotgames.com/lol/summoner/v3/summoners/by-name/" + urlName + "?api_key=",
 		success: function(data) {
 			summonerData = $.parseJSON(data);
 			console.log(summonerData);
