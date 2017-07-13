@@ -7,7 +7,7 @@
 <link rel="stylesheet" type="text/css" href="/Gatriex.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
 </script>
-<script src="/Script.js">
+<script src="/gatriex.js">
 </script>
 </head>
 
