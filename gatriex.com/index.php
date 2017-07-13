@@ -5,43 +5,19 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="shortcut icon" href="/images/favicon.ico">
 <link rel="stylesheet" type="text/css" href="/Gatriex.css">
-<!-- SCRIPTS - LOADS IN JAVASCRIPT FILES -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
 </script>
 <script src="/Script.js">
 </script>
 </head>
 
-
-<!--START BODY-->
 <body onLoad="onStartupHome()">
 <div id="test"></div>
 <header>
 <table id="headtable">
 <tr>
-<!-- MYDATE -->
 <td>
 <div id="myDate"></div>
-</td>
-<!-- LOGIN -->
-<td>
-<div id="login">
-<form action="/register/" class="Login" method="get" style="display:inline">
-	<table class="Login"><tr><td>
-	<input class="Login" placeholder="username" type="text" size="15" name="username">
-    </td><td>
-    <input class="Login" placeholder="password" type="password" size="15" name="password">
-    </td><td>
-    <button class="Login" type="submit">Log In</button><br>
-    </td></tr><tr><td>
-    <input class="Login" type="checkbox" name="remember" value="Remember"><span class="Login">Remember me</span>
-    </td><td>
-    <a href="/register/">forgot password?</a>
-    </td><td>
-    <a href="/register/">register</a>	
-    </td></tr></table>
-</form>
-</div>
 </td>
 <!--<button id="refresh" onClick="getURL()">refresh</button>-->
 </tr>
