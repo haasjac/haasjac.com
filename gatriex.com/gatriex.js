@@ -10,6 +10,7 @@ var navigation = {length: {0:0}, Name: {0:""}, linkName: {0:""}};
 $(function () {
 	getButtons();
 	myDate();
+	getURL();
 });
 
 function getURL() {	
