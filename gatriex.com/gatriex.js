@@ -55,6 +55,7 @@ function getURL() {
 				console.log(error);
 			}
 		});
+	}
 }
 
 //gets navigation buttons
