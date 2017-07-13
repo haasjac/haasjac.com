@@ -11,7 +11,7 @@
 </script>
 </head>
 
-<body onLoad="onStartupHome()">
+<body>
 <div id="test"></div>
 <header>
 <table id="headtable">
