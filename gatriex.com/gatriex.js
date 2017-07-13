@@ -24,7 +24,7 @@ function getURL() {
 		setURL("Version");
 		
 		$.ajax({
-			url: "Call.php?url=https://na1.api.riotgames.com/lol/static-data/v3/versions?api_key=";
+			url: "Call.php?url=https://na1.api.riotgames.com/lol/static-data/v3/versions?api_key=",
 			success: function(data) {
 				version = $.parseJSON(data)[0];
 				console.log(version);
@@ -35,7 +35,7 @@ function getURL() {
 		});
 		
 		$.ajax({
-			url: "Call.php?url=https://na1.api.riotgames.com/lol/summoner/v3/summoners/by-name/" + userNoSpace + "?api_key=";
+			url: "Call.php?url=https://na1.api.riotgames.com/lol/summoner/v3/summoners/by-name/" + userNoSpace + "?api_key=",
 			success: function(data) {
 				summonerData = $.parseJSON(data);
 				console.log(summonerData);
@@ -46,7 +46,7 @@ function getURL() {
 		});
 		
 		$.ajax({
-			url: "https://na1.api.riotgames.com/lol/league/v3/positions/by-summoner/" + summonerData.id + "?api_key=";
+			url: "https://na1.api.riotgames.com/lol/league/v3/positions/by-summoner/" + summonerData.id + "?api_key=",
 			success: function(data) {
 				leagueData = $.parseJSON(data);
 				console.log(leagueData);
