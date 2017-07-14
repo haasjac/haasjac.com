@@ -1,4 +1,5 @@
 //global variables
+var urlName = "Gatriex";
 var version;
 var summonerData;
 var leagueData;
@@ -10,55 +11,54 @@ var navigation = {length: {0:0}, Name: {0:""}, linkName: {0:""}};
 $(function () {
 	getButtons();
 	myDate();
-	getURL();
+	getVersion();
 });
 
-function getURL() {	
-	
-	//LEAGUE INFO
-	var urlName = "Gatriex";
-	getVersion();
-		
-	function getVersion() {
-		$.ajax({
-			url: "Call.php?url=https://na1.api.riotgames.com/lol/static-data/v3/versions?api_key=",
-			success: function(data) {
-				version = $.parseJSON(data)[0];
-				console.log(version);
-				getId();
-			},
-			error: function(xhr, status, error) {
-				console.log(error);
-			}
-		});
-	};
-	
-	function getId() {
-		$.ajax({
-			url: "Call.php?url=https://na1.api.riotgames.com/lol/summoner/v3/summoners/by-name/" + urlName + "?api_key=",
-			success: function(data) {
-				summonerData = $.parseJSON(data);
-				console.log(summonerData);
-				getData();
-			},
-			error: function(xhr, status, error) {
-				console.log(error);
-			}
-		});
-	};
-	
-	function getData() {
-		$.ajax({
-			url: "Call.php?url=https://na1.api.riotgames.com/lol/league/v3/positions/by-summoner/" + summonerData.id + "?api_key=",
-			success: function(data) {
-				leagueData = $.parseJSON(data);
-				console.log(leagueData);
-			},
-			error: function(xhr, status, error) {
-				console.log(error);
-			}
-		});
-	}
+function getVersion() {
+	$.ajax({
+		url: "Call.php?url=https://na1.api.riotgames.com/lol/static-data/v3/versions?api_key=",
+		success: function(data) {
+			version = $.parseJSON(data)[0];
+			console.log(version);
+			getId();
+		},
+		error: function(xhr, status, error) {
+			console.log(error);
+		}
+	});
+};
+
+function getId() {
+	$.ajax({
+		url: "Call.php?url=https://na1.api.riotgames.com/lol/summoner/v3/summoners/by-name/" + urlName + "?api_key=",
+		success: function(data) {
+			summonerData = $.parseJSON(data);
+			console.log(summonerData);
+			getData();
+		},
+		error: function(xhr, status, error) {
+			console.log(error);
+		}
+	});
+};
+
+function getData() {
+	$.ajax({
+		url: "Call.php?url=https://na1.api.riotgames.com/lol/league/v3/positions/by-summoner/" + summonerData.id + "?api_key=",
+		success: function(data) {
+			leagueData = $.parseJSON(data);
+			displayData();
+			console.log(leagueData);
+		},
+		error: function(xhr, status, error) {
+			console.log(error);
+		}
+	});
+}
+
+function displayData() {
+	$("#SummonerIcon").attr("src", "http://ddragon.leagueoflegends.com/cdn/" + version + "/img/profileicon/" + summonerData.profileIconId + ".png");
+	$("#League").html(leagueData.tier + " " leagueData.rank + " " + leagueData.leaguePoints);
 }
 
 //gets navigation buttons
