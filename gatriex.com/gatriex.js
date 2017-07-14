@@ -58,7 +58,7 @@ function getData() {
 
 function displayData() {
 	$("#SummonerIcon").attr("src", "http://ddragon.leagueoflegends.com/cdn/" + version + "/img/profileicon/" + summonerData.profileIconId + ".png");
-	$("#League").html(leagueData.tier + " " leagueData.rank + " " + leagueData.leaguePoints);
+	$("#League").html(leagueData.tier + " " + leagueData.rank + " " + leagueData.leaguePoints);
 }
 
 //gets navigation buttons
