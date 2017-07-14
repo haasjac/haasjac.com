@@ -57,8 +57,8 @@ function getData() {
 }
 
 function displayData() {
-	$("#SummonerIcon").attr("src", "http://ddragon.leagueoflegends.com/cdn/" + version + "/img/profileicon/" + summonerData.profileIconId + ".png");
-	$("#League").html(leagueData.tier + " " + leagueData.rank + " " + leagueData.leaguePoints);
+	$("#SummonerIcon").attr("src", "https://ddragon.leagueoflegends.com/cdn/" + version + "/img/profileicon/" + summonerData.profileIconId + ".png");
+	$("#League").html(leagueData[0].tier + " " + leagueData[0].rank + " " + leagueData[0].leaguePoints);
 }
 
 //gets navigation buttons
