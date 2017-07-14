@@ -19,7 +19,8 @@ function getVersion() {
 		//url: "Call.php?url=https://na1.api.riotgames.com/lol/static-data/v3/versions?api_key=",
 		url: "https://global.api.riotgames.com/api/lol/static-data/NA/v1.2/versions?api_key=RGAPI-946f2254-9f5d-4e8b-aa63-93d0ac5b7c24",
 		success: function(data) {
-			version = $.parseJSON(data)[0];
+			//version = $.parseJSON(data)[0];
+			version = data[0];
 			console.log(version);
 			getId();
 		},
