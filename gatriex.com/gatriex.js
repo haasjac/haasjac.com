@@ -16,7 +16,7 @@ $(function () {
 
 function getVersion() {
 	$.ajax({
-		url: "Call.php?url=https://na1.api.riotgames.com/lol/static-data/v3/versions?api_key=",
+		url: "Call.php?url=https://americas.api.riotgames.com/lol/static-data/v3/versions?api_key=",
 		success: function(data) {
 			version = $.parseJSON(data)[0];
 			console.log(version);
