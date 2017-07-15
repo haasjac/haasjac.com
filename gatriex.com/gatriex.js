@@ -22,7 +22,7 @@ function getVersion() {
 		success: function(data) {
 			//version = $.parseJSON(data)[0];
 			version = data[0];
-			console.log(version);
+			console.log(data);
 			getId();
 		},
 		error: function(xhr, status, error) {
@@ -64,6 +64,7 @@ function getStatus() {
 		url: "Call.php?url=https://na1.api.riotgames.com/lol/status/v3/shard-data?api_key=",
 		success: function(data) {
 			console.log(data);
+			data = $.parseJSON(data);
 			$("#Status").html(data.name);
 			var incidentText = "<ul>";
 			for (j = 0; j < 4; j++) {
