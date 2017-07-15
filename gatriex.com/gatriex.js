@@ -84,7 +84,7 @@ function getStatus() {
 				incidentText += "</ol>";
 			}
 			incidentText += "</ul>";
-			$("$Incidents").html(incidentText);
+			$("#Incidents").html(incidentText);
 		},
 		error: function(xhr, status, error) {
 			console.log(error);
