@@ -12,6 +12,7 @@ $(function () {
 	getButtons();
 	myDate();
 	getVersion();
+	getStatus();
 });
 
 function getVersion() {
@@ -51,6 +52,38 @@ function getData() {
 			leagueData = $.parseJSON(data);
 			displayData();
 			console.log(leagueData);
+		},
+		error: function(xhr, status, error) {
+			console.log(error);
+		}
+	});
+}
+
+function getStatus() {
+	$.ajax({
+		url: "Call.php?url=https://na1.api.riotgames.com/lol/status/v3/shard-data?api_key=",
+		success: function(data) {
+			console.log(data);
+			$("#Status").html(data.name);
+			var incidentText = "<ul>";
+			for (j = 0; j < 4; j++) {
+				if (j>0) incidentText += "<br>";
+				incidentText += "<li>";
+				incidentText += data.services[j].name + " - " + data.services[j].status;
+				incidentText += "</li>";
+				incidentText += "<ol>";
+				for (i = 0; i < data.services[j].incidents.length; i++) {
+					if (data.services[j].incidents[i].updates[0]) {
+						incidentText += "<li>";
+						incidentText += data.services[j].incidents[i].updates[0].content;
+						incidentText += "</li>";
+						if (i < data.services[j].incidents.length -1) incidentText += "<br />";
+					}
+				}
+				incidentText += "</ol>";
+			}
+			incidentText += "</ul>";
+			$("$Incidents").html(incidentText);
 		},
 		error: function(xhr, status, error) {
 			console.log(error);
