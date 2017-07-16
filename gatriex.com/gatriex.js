@@ -11,8 +11,8 @@ var navigation = {length: {0:0}, Name: {0:""}, linkName: {0:""}};
 $(function () {
 	getButtons();
 	myDate();
-	getVersion();
-	getStatus();
+	setInterval(getVersion(), 60000); // 1 min
+	setInterval(getStatus(), 300000); // 5 min
 });
 
 function getVersion() {
@@ -21,7 +21,6 @@ function getVersion() {
 		url: "Call.php?url=https://global.api.riotgames.com/api/lol/static-data/NA/v1.2/versions?api_key=",
 		success: function(data) {
 			version = $.parseJSON(data)[0];
-			setInterval(getId(), 60000); //1 min
 			getId();
 		},
 		error: function(xhr, status, error) {
@@ -60,7 +59,6 @@ function getStatus() {
 	$.ajax({
 		url: "Call.php?url=https://na1.api.riotgames.com/lol/status/v3/shard-data?api_key=",
 		success: function(data) {
-			console.log(data);
 			data = $.parseJSON(data);
 			$("#Status").html(data.name);
 			var incidentText = "<ul>";
