@@ -62,17 +62,17 @@ function getStatus() {
 			data = $.parseJSON(data);
 			$("#Status").html(data.name);
 			var incidentText = "<ul>";
-			for (j = 0; j < 4; j++) {
+			for (j = 0; j < data.services.length; j++) {
 				if (j>0) incidentText += "<br>";
-				incidentText += "<li>";
-				incidentText += data.services[j].name + " - " + data.services[j].status;
-				incidentText += "</li>";
-				incidentText += "<ol>";
+				incidentText += "<li>" +
+									data.services[j].name + " - " + data.services[j].status +
+								"</li>" +
+								"<ol>";
 				for (i = 0; i < data.services[j].incidents.length; i++) {
 					if (data.services[j].incidents[i].updates[0]) {
-						incidentText += "<li>";
-						incidentText += data.services[j].incidents[i].updates[0].content;
-						incidentText += "</li>";
+						incidentText += "<li>" +
+											data.services[j].incidents[i].updates[0].content +
+										"</li>";
 						if (i < data.services[j].incidents.length -1) incidentText += "<br />";
 					}
 				}
@@ -88,6 +88,14 @@ function getStatus() {
 }
 
 function displayData() {
+	var mini = "";
+	if (leagueData[0].miniSeries){
+		mini = leagueData[0].miniSeries.progress;
+		mini = mini.replace(/W/g,"O \t");
+		mini = mini.replace(/N/g,"- \t");
+		mini = mini.replace(/L/g,"X \t");
+	}
+	$("#MiniSeries").html(mini);
 	$("#SummonerName").html(summonerData.name);
 	$("#SummonerIcon").attr("src", "https://ddragon.leagueoflegends.com/cdn/" + version + "/img/profileicon/" + summonerData.profileIconId + ".png");
 	$("#League").html(leagueData[0].tier + " " + leagueData[0].rank + " " + leagueData[0].leaguePoints);
@@ -115,28 +123,10 @@ function myDate() {
 	var d = new Date();
 	var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 	var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
-	var mod;
-	var hour;
-	var minutes;
-	if (d.getMinutes() < 10) {
-		minutes = "0" + d.getMinutes();	
-	} else {
-		minutes = d.getMinutes();	
-	}
-	if (d.getHours() == 0) {
-		hour = 12;
-		mod = "AM"
-	} else if (d.getHours()<=11) {
-		hour = d.getHours();
-		mod = "AM"
-	} else if (d.getHours() == 12) {
-		hour = 12;
-		mod = "PM";
-	} else {
-		hour = d.getHours()	- 12;
-		mod = "PM";
-	}
-	document.getElementById("myDate").innerHTML = '<a href="/"><img src="/images/Logo.png" width="100" height="100" /></a> ' + days[d.getDay()] + ", " + months[d.getMonth()] + " " + d.getDate() + " " + hour + ":" + minutes + " " + mod;
+	var mod = (d.getHours() < 12 ? "AM" : "PM");
+	var hour = (d.getHours() % 12 == 0 ? 12 : d.getHours() % 12);
+	var minutes = ((d.getMinutes() < 10) ? "0" + d.getMinutes() : d.getMinutes());
+	$("#myDate")(days[d.getDay()] + ", " + months[d.getMonth()] + " " + d.getDate() + " " + hour + ":" + minutes + " " + mod);
 	setTimeout("myDate()",1000);
 }
 

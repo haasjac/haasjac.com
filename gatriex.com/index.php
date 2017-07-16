@@ -12,14 +12,13 @@
 </head>
 
 <body>
-<div id="test"></div>
 <header>
 <table id="headtable">
 <tr>
 <td>
+<span><a href="/"><img src="/images/Logo.png" width="100" height="100" /></a></span>
 <div id="myDate"></div>
 </td>
-<!--<button id="refresh" onClick="getURL()">refresh</button>-->
 </tr>
 </table>
 </header>
@@ -77,7 +76,6 @@
 <div id="SummonerName"></div>
 <div id="League"></div>
 <div id="MiniSeries"></div>
-<div id="DefaultButton"></div>
 <div id="Error"></div>
 </td>
 </td>
@@ -91,17 +89,8 @@
 </main>
 
 <footer>
-<!-- NAVIGATION -->
-<a href="/" class="style1">HOME</a> | <a href="/about" class="style1">ABOUT</a>
-<!-- CREATIVE COMMONS -->
-<div class="Creative">
-<br /><br />
-This work is licensed under a <a class="Creative" rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
-</div>
-<!--<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" style="float:right" width="60" height="20"></a>-->
-<br />
 <div style="font-size:12px">
-Gatriex isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing League of Legends.
+Gatriex.com isn't endorsed by Riot Games and doesn't reflect the views or opinions of Riot Games or anyone officially involved in producing or managing League of Legends.
 <br /> 
 League of Legends and Riot Games are trademarks or registered trademarks of Riot Games, Inc. League of Legends © Riot Games, Inc.
 </div>
