@@ -21,9 +21,7 @@ function getVersion() {
 		url: "Call.php?url=https://global.api.riotgames.com/api/lol/static-data/NA/v1.2/versions?api_key=",
 		success: function(data) {
 			version = $.parseJSON(data)[0];
-			//version = data[0];
-			console.log(data);
-			console.log(version);
+			setInterval(getId()}, 60000); //1 min
 			getId();
 		},
 		error: function(xhr, status, error) {
@@ -37,7 +35,6 @@ function getId() {
 		url: "Call.php?url=https://na1.api.riotgames.com/lol/summoner/v3/summoners/by-name/" + urlName + "?api_key=",
 		success: function(data) {
 			summonerData = $.parseJSON(data);
-			console.log(summonerData);
 			getData();
 		},
 		error: function(xhr, status, error) {
@@ -52,7 +49,6 @@ function getData() {
 		success: function(data) {
 			leagueData = $.parseJSON(data);
 			displayData();
-			console.log(leagueData);
 		},
 		error: function(xhr, status, error) {
 			console.log(error);
