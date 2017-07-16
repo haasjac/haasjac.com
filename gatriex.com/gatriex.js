@@ -126,7 +126,7 @@ function myDate() {
 	var mod = (d.getHours() < 12 ? "AM" : "PM");
 	var hour = (d.getHours() % 12 == 0 ? 12 : d.getHours() % 12);
 	var minutes = ((d.getMinutes() < 10) ? "0" + d.getMinutes() : d.getMinutes());
-	$("#myDate")(days[d.getDay()] + ", " + months[d.getMonth()] + " " + d.getDate() + " " + hour + ":" + minutes + " " + mod);
+	$("#myDate").html(days[d.getDay()] + ", " + months[d.getMonth()] + " " + d.getDate() + " " + hour + ":" + minutes + " " + mod);
 	setTimeout("myDate()",1000);
 }
 
