@@ -77,14 +77,10 @@
 <div id="League"></div>
 <div id="MiniSeries"></div>
 <div id="Error"></div>
-</td>
-</td>
-
-
-<td id="statuscell">
 <div id="Status" style="display:inline; text-transform:capitalize"></div>
 <div id="Incidents" style="display:inline"></div>
-</td></tr>
+</td>
+</tr>
 </table>
 </main>
 
