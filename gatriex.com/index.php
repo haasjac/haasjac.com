@@ -26,12 +26,8 @@
 
 <!-- TABLE CONTAINING MAIN CONTENT -->
 <main>
-<table id="main">
-<tr>
-
 
 <!-- NAVIGATION - CONTAINS CATEGORY divS WITH HYPERTEXT LINKS -->
-<td id="navcell" rowspan="2">
 <nav>
 <button id="navButton0" style="display:none" onClick="setButtons(0)"></button><br />
 <span id="NavCat0" style="display:none"></span>
@@ -63,13 +59,7 @@
 <button id="navButton9" style="display:none" onClick="setButtons(9)"></button><br />
 <span id="NavCat9" style="display:none"></span>
 </nav>
-</td>
 
-
-<!-- SECTION - CONTAINS STATUS, SEARCH, AND LEAGUE INFO -->
-
-<td id="searchcell">
-<!-- SEARCH-->
 <div id="Search"></div>
 <br>
 <img id="SummonerIcon">
@@ -77,11 +67,9 @@
 <div id="League"></div>
 <div id="MiniSeries"></div>
 <div id="Error"></div>
+
 <div id="Status" style="display:inline; text-transform:capitalize"></div>
 <div id="Incidents" style="display:inline"></div>
-</td>
-</tr>
-</table>
 </main>
 
 <footer>
