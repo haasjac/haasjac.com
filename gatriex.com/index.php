@@ -23,54 +23,52 @@
 </table>
 </header>
 
+<div id="main">
+	<div id="nav">
+		<button id="navButton0" style="display:none" onClick="setButtons(0)"></button><br />
+		<span id="NavCat0" style="display:none"></span>
+		<br />
+		<button id="navButton1" style="display:none" onClick="setButtons(1)"></button><br />
+		<span id="NavCat1" style="display:none"></span>
+		<br />
+		<button id="navButton2" style="display:none" onClick="setButtons(2)"></button><br />
+		<span id="NavCat2" style="display:none"></span>
+		<br />
+		<button id="navButton3" style="display:none" onClick="setButtons(3)"></button><br />
+		<span id="NavCat3" style="display:none"></span>
+		<br />
+		<button id="navButton4" style="display:none" onClick="setButtons(4)"></button><br />
+		<span id="NavCat4" style="display:none"></span>
+		<br />
+		<button id="navButton5" style="display:none" onClick="setButtons(5)"></button><br />
+		<span id="NavCat5" style="display:none"></span>
+		<br />
+		<button id="navButton6" style="display:none" onClick="setButtons(6)"></button><br />
+		<span id="NavCat6" style="display:none"></span>
+		<br />
+		<button id="navButton7" style="display:none" onClick="setButtons(7)"></button><br />
+		<span id="NavCat7" style="display:none"></span>
+		<br />
+		<button id="navButton8" style="display:none" onClick="setButtons(8)"></button><br />
+		<span id="NavCat8" style="display:none"></span>
+		<br />
+		<button id="navButton9" style="display:none" onClick="setButtons(9)"></button><br />
+		<span id="NavCat9" style="display:none"></span>
+	</div>
 
-<!-- TABLE CONTAINING MAIN CONTENT -->
-<main>
+	<div id="content">
+		<div id="Search"></div>
+		<br>
+		<img id="SummonerIcon">
+		<div id="SummonerName"></div>
+		<div id="League"></div>
+		<div id="MiniSeries"></div>
+		<div id="Error"></div>
 
-<!-- NAVIGATION - CONTAINS CATEGORY divS WITH HYPERTEXT LINKS -->
-<nav>
-<button id="navButton0" style="display:none" onClick="setButtons(0)"></button><br />
-<span id="NavCat0" style="display:none"></span>
-<br />
-<button id="navButton1" style="display:none" onClick="setButtons(1)"></button><br />
-<span id="NavCat1" style="display:none"></span>
-<br />
-<button id="navButton2" style="display:none" onClick="setButtons(2)"></button><br />
-<span id="NavCat2" style="display:none"></span>
-<br />
-<button id="navButton3" style="display:none" onClick="setButtons(3)"></button><br />
-<span id="NavCat3" style="display:none"></span>
-<br />
-<button id="navButton4" style="display:none" onClick="setButtons(4)"></button><br />
-<span id="NavCat4" style="display:none"></span>
-<br />
-<button id="navButton5" style="display:none" onClick="setButtons(5)"></button><br />
-<span id="NavCat5" style="display:none"></span>
-<br />
-<button id="navButton6" style="display:none" onClick="setButtons(6)"></button><br />
-<span id="NavCat6" style="display:none"></span>
-<br />
-<button id="navButton7" style="display:none" onClick="setButtons(7)"></button><br />
-<span id="NavCat7" style="display:none"></span>
-<br />
-<button id="navButton8" style="display:none" onClick="setButtons(8)"></button><br />
-<span id="NavCat8" style="display:none"></span>
-<br />
-<button id="navButton9" style="display:none" onClick="setButtons(9)"></button><br />
-<span id="NavCat9" style="display:none"></span>
-</nav>
-
-<div id="Search"></div>
-<br>
-<img id="SummonerIcon">
-<div id="SummonerName"></div>
-<div id="League"></div>
-<div id="MiniSeries"></div>
-<div id="Error"></div>
-
-<div id="Status" style="display:inline; text-transform:capitalize"></div>
-<div id="Incidents" style="display:inline"></div>
-</main>
+		<div id="Status" style="display:inline; text-transform:capitalize"></div>
+		<div id="Incidents" style="display:inline"></div>
+	</div>
+</div>
 
 <footer>
 <div style="font-size:12px">
