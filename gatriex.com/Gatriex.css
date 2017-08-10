@@ -102,8 +102,8 @@ body {
 	width: 70%;
 }
 
-/*
-#main td {
+
+/*#main td {
 	vertical-align: top;
 	border-collapse:collapse;
 }
@@ -125,18 +125,18 @@ nav {
 	padding-right:10px;
 	padding-bottom:20px;
 	
-}
-nav a {
+}*/
+#nav a {
 	color:#555555;
 	text-decoration: none;
 	text-indent: 25px;
 }
-nav a:hover {
+#nav a:hover {
 	color:#000000;
-	text-decoration: none;
-	text-indent: 25px;
+	//text-decoration: none;
+	//text-indent: 25px;
 }
-[id^=navButton] {
+.navButton {
 	background-color: transparent;
 	border: none;
 	outline:none;
@@ -144,12 +144,12 @@ nav a:hover {
 	text-decoration: underline;
 	font-family: 'kingsbridgeregular';
 }
-[id^=NavCat] {
+.navCat {
 	padding-top: 10px;
 }
 
 
-[id^=searchcell] {
+/*[id^=searchcell] {
 	float: left;
 	//width: 420px;
 	font-size:24px;

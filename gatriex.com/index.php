@@ -25,35 +25,35 @@
 
 <div id="main">
 	<div id="nav">
-		<button id="navButton0" style="display:none" onClick="setButtons(0)"></button><br />
-		<span id="NavCat0" style="display:none"></span>
+		<button id="navButton0" class="navButton" style="display:none" onClick="setButtons(0)"></button><br />
+		<span id="NavCat0" class="navCat" style="display:none"></span>
 		<br />
-		<button id="navButton1" style="display:none" onClick="setButtons(1)"></button><br />
-		<span id="NavCat1" style="display:none"></span>
+		<button id="navButton1" class="navButton" style="display:none" onClick="setButtons(1)"></button><br />
+		<span id="NavCat1" class="navCat" style="display:none"></span>
 		<br />
-		<button id="navButton2" style="display:none" onClick="setButtons(2)"></button><br />
-		<span id="NavCat2" style="display:none"></span>
+		<button id="navButton2" class="navButton" style="display:none" onClick="setButtons(2)"></button><br />
+		<span id="NavCat2" class="navCat" style="display:none"></span>
 		<br />
-		<button id="navButton3" style="display:none" onClick="setButtons(3)"></button><br />
-		<span id="NavCat3" style="display:none"></span>
+		<button id="navButton3" class="navButton" style="display:none" onClick="setButtons(3)"></button><br />
+		<span id="NavCat3" class="navCat" style="display:none"></span>
 		<br />
-		<button id="navButton4" style="display:none" onClick="setButtons(4)"></button><br />
-		<span id="NavCat4" style="display:none"></span>
+		<button id="navButton4" class="navButton" style="display:none" onClick="setButtons(4)"></button><br />
+		<span id="NavCat4" class="navCat" style="display:none"></span>
 		<br />
-		<button id="navButton5" style="display:none" onClick="setButtons(5)"></button><br />
-		<span id="NavCat5" style="display:none"></span>
+		<button id="navButton5" class="navButton" style="display:none" onClick="setButtons(5)"></button><br />
+		<span id="NavCat5" class="navCat" style="display:none"></span>
 		<br />
-		<button id="navButton6" style="display:none" onClick="setButtons(6)"></button><br />
-		<span id="NavCat6" style="display:none"></span>
+		<button id="navButton6" class="navButton" style="display:none" onClick="setButtons(6)"></button><br />
+		<span id="NavCat6" class="navCat" style="display:none"></span>
 		<br />
-		<button id="navButton7" style="display:none" onClick="setButtons(7)"></button><br />
-		<span id="NavCat7" style="display:none"></span>
+		<button id="navButton7" class="navButton" style="display:none" onClick="setButtons(7)"></button><br />
+		<span id="NavCat7" class="navCat" style="display:none"></span>
 		<br />
-		<button id="navButton8" style="display:none" onClick="setButtons(8)"></button><br />
-		<span id="NavCat8" style="display:none"></span>
+		<button id="navButton8" class="navButton" style="display:none" onClick="setButtons(8)"></button><br />
+		<span id="NavCat8" class="navCat" style="display:none"></span>
 		<br />
-		<button id="navButton9" style="display:none" onClick="setButtons(9)"></button><br />
-		<span id="NavCat9" style="display:none"></span>
+		<button id="navButton9" class="navButton" style="display:none" onClick="setButtons(9)"></button><br />
+		<span id="NavCat9" class="navCat" style="display:none"></span>
 	</div>
 
 	<div id="content">
