@@ -69,9 +69,10 @@
 			</div>
 			<div style="clear: both;"></div>
 		</div>
-		
-		<div id="Status" style="display:inline; text-transform:capitalize"></div>
-		<div id="Incidents" style="display:inline"></div>
+		<div style="padding-top:20px;">
+			<div id="Status" style="display:inline; text-transform:capitalize"></div>
+			<div id="Incidents" style="display:inline"></div>
+		</div>
 	</div>
 	
 	<div style="clear: both;"></div>
