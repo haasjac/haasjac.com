@@ -91,6 +91,18 @@ body {
 	box-shadow: 0px 0px 10px 5px rgb(20,45,70);
 	border-collapse: collapse;
 }
+
+#nav {
+	float: left;
+	width: 30%;
+}
+
+#content {
+	float: left;
+	width: 70%;
+}
+
+/*
 #main td {
 	vertical-align: top;
 	border-collapse:collapse;
@@ -102,7 +114,6 @@ body {
 	width: 40%;
 	box-sizing: border-box;
 }
-/* NAVIGATION */
 nav {
 	min-height: 400px;
 	width: 250px;
@@ -138,7 +149,6 @@ nav a:hover {
 }
 
 
-/* LEAGUE INFO SECTION */
 [id^=searchcell] {
 	float: left;
 	//width: 420px;
@@ -153,7 +163,6 @@ nav a:hover {
 	box-sizing: border-box;
 }
 [id^=statuscell] {
-	/*float: left;*/
 	width: 470px;
 	font-size:24px;
 	color:#000000;
@@ -162,7 +171,7 @@ nav a:hover {
 }
 #searchcell {
 	text-align: center;
-}
+}*/
 #SummonerIcon {
 	width: 150px;
 	height: 150px;
