@@ -57,14 +57,19 @@
 	</div>
 
 	<div id="content">
-		<div id="Search"></div>
-		<br>
-		<img id="SummonerIcon">
-		<div id="SummonerName"></div>
-		<div id="League"></div>
-		<div id="MiniSeries"></div>
-		<div id="Error"></div>
-
+		<div>
+			<div style="float:left;">
+				<img id="SummonerIcon">
+			</div>
+			<div style="float:left;">
+				<div id="SummonerName"></div>
+				<div id="League"></div>
+				<div id="MiniSeries"></div>
+				<div id="Error"></div>
+			</div>
+			<div style="clear: both;"></div>
+		</div>
+		
 		<div id="Status" style="display:inline; text-transform:capitalize"></div>
 		<div id="Incidents" style="display:inline"></div>
 	</div>
