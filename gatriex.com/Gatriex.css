@@ -90,6 +90,8 @@ body {
 	background-color: #E8E7E6;
 	box-shadow: 0px 0px 10px 5px rgb(20,45,70);
 	border-collapse: collapse;
+	padding: 20px;
+    box-sizing: border-box;
 }
 
 #nav {

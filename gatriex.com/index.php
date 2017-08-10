@@ -61,7 +61,7 @@
 			<div style="float:left;">
 				<img id="SummonerIcon">
 			</div>
-			<div style="float:left;">
+			<div style="float:left;padding-top:20px;">
 				<div id="SummonerName"></div>
 				<div id="League"></div>
 				<div id="MiniSeries"></div>
