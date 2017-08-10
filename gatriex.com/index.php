@@ -68,6 +68,8 @@
 		<div id="Status" style="display:inline; text-transform:capitalize"></div>
 		<div id="Incidents" style="display:inline"></div>
 	</div>
+	
+	<div style="clear: both;"></div>
 </div>
 
 <footer>
