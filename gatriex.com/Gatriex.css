@@ -95,6 +95,7 @@ body {
 #nav {
 	float: left;
 	width: 30%;
+	font-size:20px;
 }
 
 #content {
@@ -148,6 +149,9 @@ nav {
 	padding-top: 10px;
 }
 
+#content {
+	font-size:24px;
+}
 
 /*[id^=searchcell] {
 	float: left;
