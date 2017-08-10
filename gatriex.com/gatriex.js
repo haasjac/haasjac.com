@@ -20,7 +20,7 @@ function getVersion() {
 		url: "Call.php?url=https://na1.api.riotgames.com/lol/static-data/v3/versions?api_key=",
 		//url: "Call.php?url=https://global.api.riotgames.com/api/lol/static-data/NA/v1.2/versions?api_key=",
 		success: function(data) {
-			version = $.parseJSON(data)[0];
+			version = data[0];
 			getId();
 		},
 		error: function(xhr, status, error) {
