@@ -109,7 +109,7 @@ $(function () {
 						placeholder: "ui-state-highlight",
 						start: function (e, ui) {
 							ui.placeholder.height(ui.item.height());
-						}
+						},
 						connectWith: ".list",
 					});
 					console.log(contentData);
@@ -134,7 +134,7 @@ $(function () {
 			placeholder: "ui-state-highlight",
 			start: function (e, ui) {
 				ui.placeholder.height(ui.item.height());
-			}
+			},
 			connectWith: ".list",
 		});
 
