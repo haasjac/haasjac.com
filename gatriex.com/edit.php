@@ -53,23 +53,30 @@
 </header>
 
 <div id="main">
-	<<div>
-        <form id="form">
-            <ul id="container">
-            </ul>
-            <br />
-            <div>
-                <button type="button" id="add_button" class="ui-button addCategoryButton">Add Category</button>
-                <input class="ui-button" type="submit" value="Save Changes"/>
-            </div>
-        </form>
-    </div>
 
-    <div id="error-message" title="Error">
-        <p id="error"></p>
-        <button class="ui-button" id="show_error-details">show details</button>
-        <p id="error-details" style="display:none"></p>
-    </div>
+	<div>
+	Edit Bookmarks
+	</div>
+	
+	<div style="padding:20px;">
+		<div>
+			<form id="form">
+				<ul id="container">
+				</ul>
+				<br />
+				<div>
+					<button type="button" id="add_button" class="ui-button addCategoryButton">Add Category</button>
+					<input class="ui-button" type="submit" value="Save Changes"/>
+				</div>
+			</form>
+		</div>
+
+		<div id="error-message" title="Error">
+			<p id="error"></p>
+			<button class="ui-button" id="show_error-details">show details</button>
+			<p id="error-details" style="display:none"></p>
+		</div>
+	</div>
 </div>
 
 <footer>
