@@ -13,7 +13,7 @@ $sql = "SELECT text, link, header FROM Links";
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
-        if (!isset($headers[$row["header"]]) {
+        if (!isset($headers[$row["header"]])) {
             $headers[$row["header"]] = array();
         }
         $item = array();
@@ -23,7 +23,7 @@ if ($result->num_rows > 0) {
     }
 }
 
-for ($headers as $key => $value) {
+foreach ($headers as $key => $value) {
     $category = array();
     $category["header"] = $key;
     $category["items"] = $value;
